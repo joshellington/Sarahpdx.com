@@ -250,6 +250,15 @@ ul {
       padding:0 30px;
       margin:0;
     }
+
+  h3 span.line {
+    border-bottom:1px solid #ccc;
+    display:block;
+    width:80%;
+    margin:0 auto;
+    position:relative;
+    top:-9px;
+  }
 }
 
 @media only screen and (min-width: 35em) {
