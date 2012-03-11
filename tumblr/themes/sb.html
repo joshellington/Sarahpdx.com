@@ -56,6 +56,7 @@
         
         a {
             color:#4F5460;
+            font-weight:bold;
             text-decoration:none;
             border-bottom:1px solid #ccc;
         }
@@ -68,9 +69,31 @@
         a img {
             border: none;
         }
+
+        a.button {
+          background:#fff;
+          color:#4F5460;
+          border:1px solid #ccc;
+          padding:5px 14px;
+          display:inline-block;
+          margin-top:30px;
+          font-size:13px;
+          text-decoration:none;
+          border-radius:6px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+
+          a.button:hover {
+            opacity:0.85;
+            border:1px solid #4F5460;
+          }
         
         #wrapper {
-            width:700px;
+            width:600px;
             margin:0 auto;
             padding:60px 0;
         }
@@ -101,7 +124,7 @@
                 }
             
             #wrapper #content {
-                width: 700px;
+                width: 600px;
             }
             
                 #wrapper #content .post {
@@ -177,6 +200,7 @@
                         #wrapper #content .post .copy p {
                             margin: 10px 0 0 0;
                             padding: 0;
+                            line-height:1.5;
                         }
                         
                         #wrapper #content .post .copy pre {
@@ -274,7 +298,7 @@
                     }
                     
                     #wrapper #content .post img {
-                      max-width: 700px;
+                      max-width: 545px;
                     }
                                         
                     #wrapper #content .post .chat {
@@ -318,8 +342,7 @@
                     
                     #wrapper #content .post .footer {
                         font-weight:400;
-                        font-style:italic;
-                        font-size: 11px;
+                        font-size: 10px;
                         color: #666;
                         padding: 15px 0 0;
                         border-top:1px solid #ccc;
@@ -861,6 +884,7 @@
                 </a>
             </h1>
             <h2>strategist, producer, analyst</h2>
+            <a href="http://sarahpdx.com" class="button">Visit sarahpdx.com</a>
         </div>
         
         <div id="content">
@@ -879,7 +903,7 @@
                 <div class="post">
                     
                     {block:Photo}
-                        <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" width="640" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+                        <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" width="545" alt="{PhotoAlt}" />{LinkCloseTag}</div>
                         {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
                     {/block:Photo}
                     
@@ -1014,7 +1038,7 @@
             
             {block:Pagination}
                 <div id="navigation" {block:IfEnableJumpPagination}class="jump_pagination"{/block:IfEnableJumpPagination}>
-                    {block:PreviousPage}<a href="{PreviousPage}">&larr; {lang:Previous}</a>{/block:PreviousPage}
+                    {block:PreviousPage}<a href="{PreviousPage}">&larr; {lang:Previous page}</a>{/block:PreviousPage}
                     
                     {block:IfEnableJumpPagination}
                         {block:JumpPagination length="5"}

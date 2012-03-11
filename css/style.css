@@ -83,7 +83,6 @@ body {
   color:#4F5460;
   border:15px solid #4F5460;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
 }
 
 h1,h2,h4,h5,h3 {
@@ -131,6 +130,19 @@ h3 {
     top:-9px;
   }
 
+h5 {
+  font-size:24px;
+  padding-bottom:15px;
+  font-weight:700;
+}
+
+p {
+  font-size:13px;
+  line-height:1.5;
+  margin:0 0 15px;
+  padding:0;
+}
+
 header {
   padding:60px 0;
   text-align:center;
@@ -139,7 +151,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.27), 0 0 50px rgba(0, 0, 0, 0.06) inset;*/
 }
 
-a.resume {
+a.button {
   background:#fff;
   color:#4F5460;
   border:1px solid #ccc;
@@ -149,6 +161,7 @@ a.resume {
   font-size:13px;
   text-decoration:none;
   border-radius:6px;
+  -moz-border-radius:6px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -156,7 +169,8 @@ a.resume {
   transition: all 0.2s ease-in-out;
 }
 
-  a.resume:hover {
+  a.button:hover {
+    opacity:0.85;
     border:1px solid #4F5460;
   }
 
@@ -165,6 +179,10 @@ a.resume {
   margin:0 auto;
   text-align:center;
 }
+
+  body.article #wrapper {
+    text-align:left;
+  }
 
 ul {
   padding:0;margin:0;
@@ -216,6 +234,7 @@ ul {
 
 #social {
   margin:45px 0;
+  text-align:center;
 }
 
 #social a {
